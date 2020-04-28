@@ -14,6 +14,9 @@ the right entry we want to start using a single file per entry.
 Retro tools is there to help with recording daily retrospectives in your
 repo.
 
+Heavily inspired by Nat Pryce's
+[adr-tools](https://github.com/npryce/adr-tools/).
+
 Usage
 -----
 
