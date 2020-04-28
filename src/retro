@@ -1,0 +1,12 @@
+#!/bin/bash
+retro_tools_dir=$(dirname $0)
+
+retro_dir="doc/retro"
+readme="$retro_dir/README.md"
+
+mkdir -p $retro_dir
+if [ ! -f $readme ]; then
+  cp $retro_tools_dir/readme.md $readme
+fi
+
+echo $readme
