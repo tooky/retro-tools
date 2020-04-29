@@ -2,9 +2,16 @@
 version: 2.1
 # Use a package of configuration called an orb.
 jobs:
-  test:
+  test-linux:
     docker:
       - image: cimg/base:2020.01
+    steps:
+      - checkout
+      - run: 
+          name: "make"
+          command: "make clean check"
+  test-mac:
+    macos
     steps:
       - checkout
       - run: 
@@ -13,4 +20,5 @@ jobs:
 workflows:
   build:
     jobs:
-      - test
+      - test-linux
+      - test-mac
