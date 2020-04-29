@@ -7,7 +7,7 @@ readme="$retro_dir/README.md"
 
 mkdir -p $retro_dir
 if [ ! -f $readme ]; then
-  cp $retro_tools_dir/readme.md $readme
+  cp $retro_tools_dir/README.md $readme
   echo $readme
 else
   echo "You've already set up a retro folder!"
