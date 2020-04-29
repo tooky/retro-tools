@@ -15,7 +15,9 @@ Retro tools is there to help with recording daily retrospectives in your
 repo.
 
 Heavily inspired by Nat Pryce's
-[adr-tools](https://github.com/npryce/adr-tools/).
+[adr-tools](https://github.com/npryce/adr-tools/). Much of the testing
+infrastructure is based on Nat's work. See
+[LICENSE](https://github.com/npryce/adr-tools/blob/master/LICENSE.txt).
 
 Usage
 -----
