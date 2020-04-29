@@ -11,7 +11,8 @@ jobs:
           name: "make"
           command: "make clean check"
   test-mac:
-    macos
+    macos:
+      xcode: 11.3.0
     steps:
       - checkout
       - run: 
