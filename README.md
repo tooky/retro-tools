@@ -1,6 +1,8 @@
 Retro Tools
 ===========
 
+[![tooky](https://circleci.com/gh/tooky/retro-tools.svg?style=svg)](https://circleci.com/gh/tooky/retro-tools)
+
 Inspired by Woody Zuill we started at to run a daily retrospective during
 our remote mobbing experiments. We started to record our the outcome of
 our retrospectives for team members who weren't there and to help us
