@@ -22,4 +22,5 @@ workflows:
   build:
     jobs:
       - test-linux
-      - test-mac
+      # wait until there's a plan available for mac
+      #- test-mac
