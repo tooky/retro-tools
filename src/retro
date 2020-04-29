@@ -1,13 +1,13 @@
 #!/bin/bash
+set -e
 retro_tools_dir=$(dirname $0)
+cmd=$retro_tools_dir/retro-$1
 
-retro_dir="doc/retro"
-readme="$retro_dir/README.md"
-
-mkdir -p $retro_dir
-if [ ! -f $readme ]; then
-  cp $retro_tools_dir/readme.md $readme
-  echo $readme
+if [ -x $cmd ]
+then
+  $cmd
 else
-  echo "You've already set up a retro folder!"
+  echo "unkown command" 
+  exit 1
 fi
+
