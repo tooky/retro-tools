@@ -1,4 +1,3 @@
-# {{date}}
 ## Who
 
 ## What happened

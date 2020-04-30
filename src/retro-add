@@ -13,6 +13,7 @@ target_dir=$retro_dir/$year/$month
 target_file=$target_dir/$day.md
 
 mkdir -p $target_dir
-cat $template | sed "s/{{date}}/$date/g" > $target_file
+echo "# $date" > $target_file
+cat $template >> $target_file
 $EDITOR $target_file
 echo $target_file
