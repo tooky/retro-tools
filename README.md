@@ -44,8 +44,9 @@ recorded.
 
     $ retro add
 
-This will add a new retro file in the `doc/retro` folder, dated today
-(e.g. `doc/retro/2020/04/29.md`) and open the file with `$EDITOR`.
+This will add a new retro file in the `doc/retro` folder, dated today (e.g.
+`doc/retro/2020/04/29.md`) and open the file with `$EDITOR`. If there is a file
+already it will add a new retro to the same day.
 
 ## TODO
 
