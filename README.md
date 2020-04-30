@@ -21,6 +21,19 @@ Heavily inspired by Nat Pryce's
 infrastructure is based on Nat's work. See
 [LICENSE](https://github.com/npryce/adr-tools/blob/master/LICENSE.txt).
 
+Installation
+------------
+
+Download the zip archive of this repository:
+
+    curl -LO https://github.com/tooky/retro-tools/archive/master.zip
+
+Unzip the zipfile
+
+    unzip master.zip
+
+Add the location of the `retro-tools-master/src` dir to your path.
+
 Usage
 -----
 
