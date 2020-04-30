@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+retro_tools_dir=$(dirname $0)
+template=$retro_tools_dir/template.md
+
+mkdir -p doc/retro/1997/06
+cat $template > doc/retro/1997/06/05.md
+$EDITOR doc/retro/1997/06/05.md
+echo doc/retro/1997/06/05.md

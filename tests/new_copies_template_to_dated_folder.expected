@@ -1,0 +1,14 @@
+EDITOR=fake-editor retro_date=1997-06-05 retro new
+EDITOR doc/retro/1997/06/05.md
+doc/retro/1997/06/05.md
+ls doc/retro/*/*/*
+doc/retro/1997/06/05.md
+cat doc/retro/1997/06/05.md
+# 1997-06-05
+## Who
+
+## What happened
+
+## Insights
+
+## Actions
