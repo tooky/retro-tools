@@ -29,11 +29,18 @@ Usage
 This will create a new `doc/retro` folder where the retros will be
 recorded.
 
-    $ retro new
+    $ retro add
 
-This will create a new retro file in the `doc/retro` folder, dated today
-(e.g. `doc/retro/2020/04/29.md`) and open the file with `$EDITOR`.
+This will add a new retro file in the `doc/retro` folder, dated today
+(e.g. `doc/retro/2020/04/29.md`) and open the file with `$EDITOR`. If there
+is a file already it will add a new retro to the same day.
 
     $ retro edit
 
 This will open today's retro (if it exists) with `$EDITOR`.
+
+## TODO
+
+- [ ]: Add the edit command
+- [ ]: Support multiple teams having retros in the same folder
+- [ ]: Support custom templates
