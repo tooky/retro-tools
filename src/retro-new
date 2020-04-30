@@ -2,9 +2,17 @@
 set -e
 
 retro_tools_dir=$(dirname $0)
+retro_dir=doc/retro
 template=$retro_tools_dir/template.md
+date=${retro_date:-$(date +%Y-%m-%d)}
+year=${date:0:4}
+month=${date:5:2}
+day=${date:8:2}
 
-mkdir -p doc/retro/1997/06
-cat $template > doc/retro/1997/06/05.md
-$EDITOR doc/retro/1997/06/05.md
-echo doc/retro/1997/06/05.md
+target_dir=$retro_dir/$year/$month
+target_file=$target_dir/$day.md
+
+mkdir -p $target_dir
+cat $template | sed "s/{{date}}/$date/g" > $target_file
+$EDITOR $target_file
+echo $target_file

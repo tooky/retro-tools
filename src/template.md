@@ -1,4 +1,4 @@
-# 1997-06-05
+# {{date}}
 ## Who
 
 ## What happened
