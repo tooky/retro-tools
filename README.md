@@ -45,16 +45,11 @@ recorded.
     $ retro add
 
 This will add a new retro file in the `doc/retro` folder, dated today
-(e.g. `doc/retro/2020/04/29.md`) and open the file with `$EDITOR`. If there
-is a file already it will add a new retro to the same day.
-
-    $ retro edit
-
-This will open today's retro (if it exists) with `$EDITOR`.
+(e.g. `doc/retro/2020/04/29.md`) and open the file with `$EDITOR`.
 
 ## TODO
 
-- [ ]: Add the edit command
+- [ ]: Add an edit command
 - [ ]: Support multiple teams having retros in the same folder
 - [ ]: Support custom templates
 - [ ]: Support multiple teams with team templates
