@@ -57,3 +57,5 @@ This will open today's retro (if it exists) with `$EDITOR`.
 - [ ]: Add the edit command
 - [ ]: Support multiple teams having retros in the same folder
 - [ ]: Support custom templates
+- [ ]: Support multiple teams with team templates
+- [ ]: Use mobbers list to find the who?
