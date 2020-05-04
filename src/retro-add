@@ -3,7 +3,11 @@ set -e
 
 retro_tools_dir=$(dirname $0)
 retro_dir=doc/retro
-template=$retro_tools_dir/template.md
+if [ -f doc/retro/template.md ]; then
+  template=doc/retro/template.md
+else
+  template=$retro_tools_dir/template.md
+fi
 date=${retro_date:-$(date +%Y-%m-%d)}
 year=${date:0:4}
 month=${date:5:2}
