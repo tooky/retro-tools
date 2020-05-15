@@ -1,0 +1,13 @@
+EDITOR= retro_date=1997-06-05 retro add
+doc/retro/1997/06/05.md
+ls doc/retro/*/*/*
+doc/retro/1997/06/05.md
+cat doc/retro/1997/06/05.md
+# 1997-06-05
+## Who
+
+## What happened
+
+## Insights
+
+## Actions

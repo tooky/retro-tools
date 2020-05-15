@@ -23,5 +23,5 @@ else
   echo "---" >> $target_file
 fi
 cat $template >> $target_file
-$EDITOR $target_file
+${EDITOR:-true} $target_file
 echo $target_file
