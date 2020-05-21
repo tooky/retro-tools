@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-retro_tools_dir=$(dirname $0)
+eval "$($(dirname $0)/retro-config)"
 cmd=$retro_tools_dir/retro-$1
 
 if [ -x $cmd ]
