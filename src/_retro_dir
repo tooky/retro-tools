@@ -1,0 +1,26 @@
+#!/bin/bash
+set -e
+eval "$($(dirname $0)/retro-config)"
+
+reldir=.
+
+function mkrel() {
+	local d=$reldir/$1
+	echo ${d#./}
+}
+
+function absdir() {
+	(cd $(dirname $1) && pwd -P)
+}
+
+while [ $(absdir $reldir) != / ]
+do
+	if [ -d $(mkrel doc/retro) ] 
+	then
+		mkrel doc/retro
+		exit
+	else
+		reldir=$reldir/..
+	fi
+done
+echo doc/retro

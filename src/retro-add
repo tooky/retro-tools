@@ -2,7 +2,7 @@
 set -e
 
 eval "$($(dirname $0)/retro-config)"
-retro_dir=doc/retro
+retro_dir=$("$retro_tools_dir/_retro_dir")
 if [ -f doc/retro/template.md ]; then
   template=doc/retro/template.md
 else

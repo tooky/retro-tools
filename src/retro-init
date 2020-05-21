@@ -2,7 +2,7 @@
 set -e
 
 eval "$($(dirname $0)/retro-config)"
-retro_dir="doc/retro"
+retro_dir=$("$retro_tools_dir/_retro_dir")
 readme="$retro_dir/README.md"
 
 mkdir -p $retro_dir

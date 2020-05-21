@@ -1,0 +1,10 @@
+retro_date=1997-06-05 retro add
+doc/retro/1997/06/05.md
+mkdir subdir
+cd subdir
+retro_date=1997-06-06 retro add
+../doc/retro/1997/06/06.md
+cd ..
+ls doc/retro/*/*/*
+doc/retro/1997/06/05.md
+doc/retro/1997/06/06.md
