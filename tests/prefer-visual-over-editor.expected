@@ -1,0 +1,3 @@
+VISUAL=fake-visual EDITOR=fake-editor retro_date=1997-06-05 retro add
+VISUAL doc/retro/1997/06/05.md
+doc/retro/1997/06/05.md

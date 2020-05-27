@@ -3,4 +3,4 @@ set -e
 
 basedir=$(cd -L $(dirname $0) >/dev/null 2>&1 && pwd -L)
 echo 'retro_tools_dir="'"${basedir}"'"'
-echo 'retro_editor="'"${EDITOR:-true}"'"'
+echo 'retro_editor="'"${VISUAL:-${EDITOR:-true}}"'"'
