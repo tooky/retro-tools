@@ -3,11 +3,13 @@ set -e
 
 eval "$($(dirname $0)/retro-config)"
 retro_dir=$("$retro_tools_dir/_retro_dir")
+
 if [ -f doc/retro/template.md ]; then
   template=doc/retro/template.md
 else
   template=$retro_tools_dir/template.md
 fi
+
 date=${retro_date:-$(date +%Y-%m-%d)}
 year=${date:0:4}
 month=${date:5:2}
@@ -23,5 +25,6 @@ else
   echo "---" >> $target_file
 fi
 cat $template >> $target_file
-${EDITOR:-true} $target_file
+
+$retro_editor $target_file
 echo $target_file
