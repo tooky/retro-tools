@@ -19,20 +19,20 @@ repo.
 Heavily inspired by Nat Pryce's
 [adr-tools](https://github.com/npryce/adr-tools/). Much of the testing
 infrastructure is based on Nat's work. See
-[LICENSE](https://github.com/npryce/adr-tools/blob/master/LICENSE.txt).
+[LICENSE](https://github.com/npryce/adr-tools/blob/main/LICENSE.txt).
 
 Installation
 ------------
 
 Download the zip archive of this repository:
 
-    curl -LO https://github.com/tooky/retro-tools/archive/master.zip
+    curl -LO https://github.com/tooky/retro-tools/archive/main.zip
 
 Unzip the zipfile
 
-    unzip master.zip
+    unzip main.zip
 
-Add the location of the `retro-tools-master/src` dir to your path.
+Add the location of the `retro-tools-main/src` dir to your path.
 
 Usage
 -----
