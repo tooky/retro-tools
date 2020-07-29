@@ -48,6 +48,10 @@ This will add a new retro file in the `doc/retro` folder, dated today (e.g.
 `doc/retro/2020/04/29.md`) and open the file with `$EDITOR`. If there is a file
 already it will add a new retro to the same day.
 
+    $ retro latest
+
+This will display the most retro recorded.
+
 ## TODO
 
 - [ ]: Add an edit command
