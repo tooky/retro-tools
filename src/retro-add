@@ -19,11 +19,10 @@ target_dir=$retro_dir/$year/$month
 target_file=$target_dir/$day.md
 
 mkdir -p $target_dir
-if [ ! -f $target_file ]; then
-  echo "# $date" > $target_file
-else
-  echo "---" >> $target_file
+if [ -f $target_file ]; then
+  echo -e "\n---\n" >> $target_file
 fi
+echo "# $date" >> $target_file
 cat $template >> $target_file
 
 $retro_editor $target_file
