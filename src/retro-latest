@@ -4,6 +4,6 @@ set -e
 eval "$($(dirname $0)/retro-config)"
 retro_dir=$("$retro_tools_dir/_retro_dir")
 
-last_retro=$(find doc/retro -name '*.md' -mindepth 3 | grep "/\d\{4\}\/\d\{2\}\/\d\{2\}\.md" | tail -1)
+last_retro=$(find doc/retro  -mindepth 3 -name '*.md' | grep "/\d\{4\}\/\d\{2\}\/\d\{2\}\.md" | tail -1)
 
 cat $last_retro
