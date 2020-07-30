@@ -1,0 +1,5 @@
+if retro latest
+then
+  echo ERROR: should have failed
+fi
+ERROR: no retros available, try `retro add`
