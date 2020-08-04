@@ -4,9 +4,11 @@ set -e
 eval "$($(dirname $0)/retro-config)"
 retro_dir=$("$retro_tools_dir/_retro_dir")
 
-reverse() {
-  tail -r "$@"
-}
+if ! [ -x "$(command -v tac)" ]; then
+  tac() {
+    tail -r "$@"
+  }
+fi
 
 exec 3>&2
 exec 2> /dev/null
@@ -19,4 +21,4 @@ if [ -z $last_retro ]; then
   echo ERROR: no retros available, try \`retro add\`
   exit 1
 fi
-reverse "$last_retro" | awk '/^# / {print ; exit} 1' | reverse
+tac "$last_retro" | awk '/^# / {print ; exit} 1' | tac
