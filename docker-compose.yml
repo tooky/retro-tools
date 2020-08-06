@@ -1,0 +1,8 @@
+version: '2.0'
+services:
+  make:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/code
