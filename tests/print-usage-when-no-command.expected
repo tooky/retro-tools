@@ -1,0 +1,7 @@
+retro
+usage: retro COMMAND [ARG] ...
+COMMAND is one of:
+  init
+  add
+  latest
+  config

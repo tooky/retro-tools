@@ -7,7 +7,11 @@ if [ -x $cmd ]
 then
   $cmd
 else
-  echo "unkown command" 
-  exit 1
+  echo "usage: retro COMMAND [ARG] ..."
+  echo "COMMAND is one of:"
+  echo "  init"
+  echo "  add"
+  echo "  latest"
+  echo "  config"
 fi
 
