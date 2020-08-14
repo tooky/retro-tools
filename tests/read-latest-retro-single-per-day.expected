@@ -1,8 +1,14 @@
-EDITOR=fake-editor retro_date=1997-06-05 retro add
-EDITOR doc/retro/1997/06/05.md
-doc/retro/1997/06/05.md
+EDITOR=fake-editor retro_date=1997-06-19 retro add
+EDITOR doc/retro/1997/06/19.md
+doc/retro/1997/06/19.md
+EDITOR=fake-editor retro_date=1997-06-02 retro add
+EDITOR doc/retro/1997/06/02.md
+doc/retro/1997/06/02.md
+EDITOR=fake-editor retro_date=1997-04-13 retro add
+EDITOR doc/retro/1997/04/13.md
+doc/retro/1997/04/13.md
 retro latest
-# 1997-06-05
+# 1997-06-19
 ## Who
 
 ## What happened
